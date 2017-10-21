@@ -5,8 +5,7 @@
 #ifndef NEURAL_NETWORK_CONNECTION_LAYER_H
 #define NEURAL_NETWORK_CONNECTION_LAYER_H
 
-#include "node_layer.h"
-
+class node_layer;
 class connection_layer {
     friend node_layer;
 private:

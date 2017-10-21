@@ -2,7 +2,7 @@
 // Created by michaelpollind on 19/10/17.
 //
 
-#include "ml.h"
+#include "Ml.h"
 #include <math.h>
 #include <algorithm>
 
@@ -38,14 +38,16 @@
 //    }
 //}
 
-ml::ml() {
-
-}
 
 //void ml::addLayer(Layer layer) {
 //    layers_.push_back(layer);
 //}
 
-float ml::sigmoid(float a, float bias) {
+float Ml::sigmoid(float a, float bias) {
     return 1 / (1 + exp(-a - bias));
+}
+
+Ml::Ml(node_layer *first) {
+    _first = first;
+
 }
